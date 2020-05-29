@@ -1,0 +1,35 @@
+Regexes:
+
+Title: Remove awkward line breaks 1 of 2
+Find: r"\n(\S)"
+Replace:r" $1"
+
+Title: Remove awkward line breaks 2 of 2
+Find: r"\n "
+Replace: r"\n"
+
+Title: Give each section its own page and H3 header
+Find: r"\nSECTION (.+)$
+Replace: r"### [[Mahabharata:<BOOK_NUM>:$1]]"
+
+Title: Remove duplicate newlines
+Find: r"\n\n"
+Replace: r"\n"
+
+
+Title: Replace bad quotes with normal quotes (double)
+Find: r"(“|”)"
+Replace: r"\""
+
+
+Title: Replace bad quotes with normal quotes (double)
+Find: r"(‘|’)"
+Replace: r"'"
+
+Title: Give every line a Roam bullet point
+Find: r"\n"
+Replace: r"\n- "
+
+Title:
+Find: r"\n- ([^#])"
+Replace: r"\n\t- ($1)"
