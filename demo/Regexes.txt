@@ -30,6 +30,6 @@ Title: Give every line a Roam bullet point
 Find: r"\n"
 Replace: r"\n- "
 
-Title:
+Title: Tab in subsections
 Find: r"\n- ([^#])"
 Replace: r"\n\t- ($1)"
